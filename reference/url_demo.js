@@ -12,3 +12,16 @@ console.log(myUrl.host)
 //hostname
 
 console.log(myUrl.hostname)
+
+//parameter object
+
+console.log(myUrl.searchParams)
+
+
+//add param
+myUrl.searchParams.append('abc','123');
+
+
+//loop through params
+
+myUrl.searchParams.forEach((value,name)=>console.log(`${name}:${value}`))
